@@ -1,0 +1,7 @@
+version: 2
+
+macros:
+  - name: run_operation_create_udfs
+    description: >
+      {{ doc('run_operation_create_udfs_description') }}
+

@@ -1,0 +1,14 @@
+version: 2
+
+macros:
+  - name: camel_to_snake_case
+    description: >
+      {{ doc('udf_camel_to_snake_case_description') }}
+    arguments:
+      - name: input
+        type: string
+        description: camelCaseからsnake_caseに変換したい文字列を渡す
+
+      - name: create_udf
+        type: boolean
+        description: dbt run-operation run_operation_create_udfs で、udf_camel_to_snake を作るか否か
