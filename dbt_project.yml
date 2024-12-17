@@ -1,0 +1,7 @@
+
+# 既存のdbt_project.ymlに、下記の行を追加してください
+
+vars:
+  # MEMO: `macros/udf/*` で管理している `ユーザー定義関数(UDF)` を `$ dbt run-operation run_operation_create_udfs` で作成
+  udfs:
+    - camel_to_snake_case
